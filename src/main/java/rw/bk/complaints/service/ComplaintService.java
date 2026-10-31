@@ -1,4 +1,3 @@
-
 package rw.bk.complaints.service;
 
 import java.time.LocalDate;
@@ -63,6 +62,20 @@ public class ComplaintService {
 
     public List<Complaint> findAll() {
         return complaintRepository.findAll();
+    }
+
+    // B2: Find complaints by status.
+    public List<Complaint> findByStatus(ComplaintStatus status) {
+        return complaintRepository
+                .findByStatusOrderByComplaintDateAsc(status);
+    }
+
+    // B3: Find complaints between two dates.
+    public List<Complaint> findBetweenDates(
+            LocalDate start, LocalDate end) {
+        return complaintRepository
+                .findByComplaintDateBetweenOrderByComplaintDateAsc(
+                        start, end);
     }
 
     // Bonus: Get complaints with pagination and sorting.

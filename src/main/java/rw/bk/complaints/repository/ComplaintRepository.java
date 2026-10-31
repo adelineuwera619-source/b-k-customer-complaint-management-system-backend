@@ -1,4 +1,3 @@
-
 package rw.bk.complaints.repository;
 
 import java.time.LocalDate;

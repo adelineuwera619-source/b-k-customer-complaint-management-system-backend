@@ -1,4 +1,3 @@
-
 package rw.bk.complaints.controller;
 
 import java.time.LocalDate;
@@ -59,6 +58,28 @@ public class ComplaintController {
     @GetMapping({"", "/all"})
     public ResponseEntity<List<Complaint>> findAll() {
         return ResponseEntity.ok(complaintService.findAll());
+    }
+
+    // B2: Find complaints by status, earliest date first.
+    @GetMapping("/bystatus")
+    public ResponseEntity<List<Complaint>> findByStatus(
+            @RequestParam ComplaintStatus status) {
+
+        return ResponseEntity.ok(
+                complaintService.findByStatus(status));
+    }
+
+    // B3: Find complaints between two dates, inclusive.
+    @GetMapping("/between")
+    public ResponseEntity<List<Complaint>> findBetweenDates(
+            @RequestParam String start,
+            @RequestParam String end) {
+
+        LocalDate startDate = LocalDate.parse(start);
+        LocalDate endDate = LocalDate.parse(end);
+
+        return ResponseEntity.ok(
+                complaintService.findBetweenDates(startDate, endDate));
     }
 
     // Bonus: Get complaints with pagination and sorting.
