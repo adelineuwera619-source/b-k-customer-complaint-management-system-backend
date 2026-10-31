@@ -48,7 +48,7 @@ public class SupportAgentController {
     }
 
     // C1: Find support agents by complaint type name.
-    @GetMapping("/by-complaint-type")
+    @GetMapping("/bycomplaint-type")
     public ResponseEntity<List<SupportAgent>> findByComplaintType(
             @RequestParam String name) {
 

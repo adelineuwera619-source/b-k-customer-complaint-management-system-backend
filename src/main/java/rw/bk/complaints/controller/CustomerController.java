@@ -51,7 +51,7 @@ public class CustomerController {
     }
 
     // C4: Find customers who have complaints assigned to a support agent
-    @GetMapping("/of-support-agent/{supportAgentId}")
+    @GetMapping("/ofsupportagent/{supportAgentId}")
     public ResponseEntity<?> findCustomersBySupportAgent(
             @PathVariable UUID supportAgentId) {
 
