@@ -1,0 +1,1163 @@
+{
+  "info": {
+    "_postman_id": "eca380f4-f5b8-49fc-afba-a4ba09538496",
+    "name": "BK Customer Complaint Management System - Midterm",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58439454",
+    "_collection_link": "https://go.postman.co/collection/58439454-eca380f4-f5b8-49fc-afba-a4ba09538496?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "A - CRUD Operations",
+      "item": [
+        {
+          "name": "Complaint Types",
+          "item": [
+            {
+              "name": "A1 - Save Complaint Type",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Test Complaint Type\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/complainttypes/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complainttypes",
+                    "save"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A2 - Get All Complaint Types",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/complainttypes/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complainttypes",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A3 - Get Complaint Type By ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/complainttypes/77a7c317-c557-4637-ba94-54096358fa65",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complainttypes",
+                    "77a7c317-c557-4637-ba94-54096358fa65"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A4 - Update Complaint Type",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Account\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/complainttypes/update/77a7c317-c557-4637-ba94-54096358fa65",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complainttypes",
+                    "update",
+                    "77a7c317-c557-4637-ba94-54096358fa65"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A5 - Delete Complaint Type",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/complainttypes/delete/77a7c317-c557-4637-ba94-54096358fa65",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complainttypes",
+                    "delete",
+                    "77a7c317-c557-4637-ba94-54096358fa65"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Service Desks",
+          "item": [
+            {
+              "name": "A6 - Save Service Desk",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"deskNumber\": 5,\r\n    \"name\": \"Test Service Desk\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/service-desks/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "service-desks",
+                    "save"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A7 - Get All Service Desks",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/service-desks/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "service-desks",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A8 - Get Service Desk By ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/service-desks/79da8dfc-999f-4931-847d-13b602efd62c",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "service-desks",
+                    "79da8dfc-999f-4931-847d-13b602efd62c"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A9 - Update Service Desk",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"deskNumber\": 2,\r\n    \"name\": \"Service Desk 2\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/service-desks/update/79da8dfc-999f-4931-847d-13b602efd62c",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "service-desks",
+                    "update",
+                    "79da8dfc-999f-4931-847d-13b602efd62c"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A10 - Delete Service Desk",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/service-desks/delete/79da8dfc-999f-4931-847d-13b602efd62c",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "service-desks",
+                    "delete",
+                    "79da8dfc-999f-4931-847d-13b602efd62c"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Support Agents",
+          "item": [
+            {
+              "name": "A11 - Save Support Agent",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"firstName\": \"Test\",\r\n    \"lastName\": \"Agent\",\r\n    \"email\": \"test.agent@bk.com\",\r\n    \"serviceDesk\": {\r\n        \"id\": \"79da8dfc-999f-4931-847d-13b602efd62c\"\r\n    },\r\n    \"complaintTypes\": [\r\n        {\r\n            \"id\": \"77a7c317-c557-4637-ba94-54096358fa65\"\r\n        },\r\n        {\r\n            \"id\": \"0b8c8dba-2c6e-4792-979d-d6b74842ab6a\"\r\n        }\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/support-agents/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "support-agents",
+                    "save"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A12 - Get All Support Agents",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/support-agents/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "support-agents",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A13 - Get Support Agent By ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/support-agents/a1cf991e-3527-4d48-b07a-d68eacb72590",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "support-agents",
+                    "a1cf991e-3527-4d48-b07a-d68eacb72590"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A14 - Update Support Agent",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"firstName\": \"Jean\",\r\n    \"lastName\": \"Test\",\r\n    \"email\": \"jean.test@bk.com\",\r\n    \"serviceDesk\": {\r\n        \"id\": \"79da8dfc-999f-4931-847d-13b602efd62c\"\r\n    },\r\n    \"complaintTypes\": [\r\n        {\r\n            \"id\": \"77a7c317-c557-4637-ba94-54096358fa65\"\r\n        },\r\n        {\r\n            \"id\": \"0b8c8dba-2c6e-4792-979d-d6b74842ab6a\"\r\n        }\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/support-agents/update/a1cf991e-3527-4d48-b07a-d68eacb72590",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "support-agents",
+                    "update",
+                    "a1cf991e-3527-4d48-b07a-d68eacb72590"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A15 - Delete Support Agent",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/support-agents/delete/a1cf991e-3527-4d48-b07a-d68eacb72590",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "support-agents",
+                    "delete",
+                    "a1cf991e-3527-4d48-b07a-d68eacb72590"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Customers",
+          "item": [
+            {
+              "name": "A16 - Save Customer",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"firstName\": \"Test\",\r\n    \"lastName\": \"Customer\",\r\n    \"accountNumber\": \"BKTEST10001\",\r\n    \"email\": \"test.customer@bk.com\",\r\n    \"phone\": \"+250788123456\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/customers/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "customers",
+                    "save"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Customers",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/customers/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "customers",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A18 - Get Customer By ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/customers/09139d7f-39ce-4fc2-99dc-c82da09bdf73",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "customers",
+                    "09139d7f-39ce-4fc2-99dc-c82da09bdf73"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A19 - Update Customer",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"firstName\": \"Marie\",\r\n    \"lastName\": \"Uwera\",\r\n    \"accountNumber\": \"BK100001\",\r\n    \"email\": \"marie.uwera@example.com\",\r\n    \"phone\": \"0788123456\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/customers/update/b72e22c5-18df-49a9-b5ce-d3a60e3654a1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "customers",
+                    "update",
+                    "b72e22c5-18df-49a9-b5ce-d3a60e3654a1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A20 - Delete Customer",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/customers/delete/b72e22c5-18df-49a9-b5ce-d3a60e3654a1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "customers",
+                    "delete",
+                    "b72e22c5-18df-49a9-b5ce-d3a60e3654a1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Complaints",
+          "item": [
+            {
+              "name": "A21 - Save Complaint",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"complaintDate\": \"2026-10-31\",\r\n    \"status\": \"RECEIVED\",\r\n    \"subject\": \"Unable to access mobile banking\",\r\n    \"priority\": \"HIGH\",\r\n    \"customer\": {\r\n        \"id\": \"b72e22c5-18df-49a9-b5ce-d3a60e3654a1\"\r\n    },\r\n    \"supportAgent\": {\r\n        \"id\": \"a1cf991e-3527-4d48-b07a-d68eacb72590\"\r\n    }\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/complaints/save",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complaints",
+                    "save"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A22 - Get All Complaints",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/complaints/all",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complaints",
+                    "all"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A23 - Get Complaint By ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/complaints/c0c3d8b3-a7c9-4748-b30c-69356d7fbbba",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complaints",
+                    "c0c3d8b3-a7c9-4748-b30c-69356d7fbbba"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A24 - Update Complaint",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"complaintDate\": \"2026-11-01\",\r\n  \"status\": \"RECEIVED\",\r\n  \"subject\": \"Mobile banking transfer is delayed\",\r\n  \"priority\": \"MEDIUM\",\r\n  \"customer\": {\r\n    \"id\": \"b72e22c5-18df-49a9-b5ce-d3a60e3654a1\"\r\n  },\r\n  \"supportAgent\": {\r\n    \"id\": \"a1cf991e-3527-4d48-b07a-d68eacb72590\"\r\n  }\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/complaints/update/57acd86b-02a0-4381-8c7b-d6a87f0f3c06",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "complaints",
+                    "update",
+                    "57acd86b-02a0-4381-8c7b-d6a87f0f3c06"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "A25 - Delete Complaint",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B - Custom Finder Methods",
+      "item": [
+        {
+          "name": "B1 - Find Customers by Last Name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/customers/by-lastname?lastName=uwera",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "customers",
+                "by-lastname"
+              ],
+              "query": [
+                {
+                  "key": "lastName",
+                  "value": "uwera"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B2 - Find Complaints by Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/complaints/bystatus?status=RECEIVED",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complaints",
+                "bystatus"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "RECEIVED"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B3 - Find Complaints Between Dates",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/complaints/between?start=2026-11-01&end=2026-11-05",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complaints",
+                "between"
+              ],
+              "query": [
+                {
+                  "key": "start",
+                  "value": "2026-11-01"
+                },
+                {
+                  "key": "end",
+                  "value": "2026-11-05"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "C - JPQL Queries",
+      "item": [
+        {
+          "name": "C1 - Find Support Agents by Complaint Type",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/support-agents/bycomplaint-type?name=Mobile%20Banking",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "support-agents",
+                "bycomplaint-type"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "Mobile%20Banking"
+                }
+              ]
+            },
+            "description": "StartFragment\n\n**C1 – Find Support Agents by Complaint Type**\n\n**Method:** GET\n\n**Endpoint:** `/api/support-agents/bycomplaint-type?name=Mobile Banking`\n\n**Query Type:** JPQL\n\n**Description:** Retrieves all support agents assigned to a complaint type by its name. The search is case-insensitive and uses a JOIN between SupportAgent and its complaintTypes collection.\n\n**Test Result:** 200 OK\n\n**Returned Support Agent:** Jean Mugabo\n\n**Complaint Types:** Account and Mobile Banking\n\nEndFragment"
+          },
+          "response": []
+        },
+        {
+          "name": "C2 - Find Free Service Desks",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/service-desks/free",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "service-desks",
+                "free"
+              ]
+            },
+            "description": "StartFragment\n\n**C2 – Find Free Service Desks**\n\n**Method:** GET\n\n**Endpoint:** `/api/service-desks/free`\n\n**Query Type:** JPQL (NOT EXISTS)\n\n**Description:** Retrieves service desks that are not assigned to any support agent. The results are sorted by desk number in ascending order.\n\n**Test Result:** 200 OK\n\n**Returned Result:** Customer Service Desk 4 (Desk Number 4)\n\nEndFragment"
+          },
+          "response": []
+        },
+        {
+          "name": "C3 - Find Unused Complaint Types",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/complainttypes/unused",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complainttypes",
+                "unused"
+              ]
+            },
+            "description": "StartFragment\n\n**C3 – Find Unused Complaint Types**\n\n**Method:** GET\n\n**Endpoint:** `/api/complainttypes/unused`\n\n**Query Type:** JPQL (IS EMPTY)\n\n**Description:** Retrieves complaint types that are not assigned to any support agent. The query checks whether the supportAgents collection is empty.\n\n**Test Result:** 200 OK\n\n**Returned Result:** Loan\n\n**Complaint Type ID:** cce75bd7-0245-45ce-a010-a7ca7ae3178d\n\nEndFragment"
+          },
+          "response": []
+        },
+        {
+          "name": "C4 - Find Customers by Support Agent",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/customers/ofsupportagent/a1cf991e-3527-4d48-b07a-d68eacb72590",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "customers",
+                "ofsupportagent",
+                "a1cf991e-3527-4d48-b07a-d68eacb72590"
+              ]
+            },
+            "description": "StartFragment\n\n**C4 – Find Customers by Support Agent**\n\n- **Method:** GET\n    \n- **Endpoint:** `/api/customers/ofsupportagent/{supportAgentId}`\n    \n- **Query Type:** JPQL\n    \n- **Description:** Retrieves unique customers who have at least one complaint assigned to the specified support agent.\n    \n- **Validation:** If the support agent does not exist, the API returns HTTP 404 with the message: `The support agent with that id does not exist`.\n    \n\nEndFragment"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "D - Business Logic",
+      "item": [
+        {
+          "name": "D1 - Save Complaint with Validation",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"complaintDate\": \"2026-11-02\",\r\n    \"status\": \"RESOLVED\",\r\n    \"subject\": \"Mobile banking transaction issue\",\r\n    \"priority\": \"HIGH\",\r\n    \"customer\": {\r\n        \"id\": \"b72e22c5-18df-49a9-b5ce-d3a60e3654a1\"\r\n    },\r\n    \"supportAgent\": {\r\n        \"id\": \"a1cf991e-3527-4d48-b07a-d68eacb72590\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/complaints/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complaints",
+                "save"
+              ]
+            },
+            "description": "StartFragment\n\n**D1 – Save Complaint with Validation**\n\nEndpoint: POST `/api/complaints/save`\n\nThis endpoint saves a new customer complaint after validating the complaint date and support agent assignment.\n\n**Business rules:**\n\n1. The complaint date must not be in the past.\n    \n2. A support agent cannot have another complaint assigned on the same date, except when the existing complaint is WITHDRAWN.\n    \n3. Every successfully saved complaint must have status RECEIVED, regardless of the status provided in the request.\n    \n\n**Test results:**\n\n- Valid complaint: Successfully saved with status RECEIVED.\n    \n- Past complaint date: 400 Bad Request.\n    \n- Duplicate support agent and date: 409 Conflict.\n    \n\nEndFragment"
+          },
+          "response": []
+        },
+        {
+          "name": "D2 - Update Complaint Status",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/complaints/c0c3d8b3-a7c9-4748-b30c-69356d7fbbba/status?status=IN_PROGRESS",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complaints",
+                "c0c3d8b3-a7c9-4748-b30c-69356d7fbbba",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "IN_PROGRESS"
+                }
+              ]
+            },
+            "description": "StartFragment\n\n**D2 – Update Complaint Status**\n\nEndpoint: PATCH `/api/complaints/{id}/status`\n\nThis endpoint updates the status of an existing complaint using its complaint ID and the new status supplied as a query parameter.\n\n**Example:**  \n`/api/complaints/{id}/status?status=IN_PROGRESS`\n\n**Test result:**\n\n- Complaint status successfully changed from RECEIVED to IN_PROGRESS.\n    \n- Verified using GET `/api/complaints/{id}`.\n    \n\nEndFragment"
+          },
+          "response": []
+        },
+        {
+          "name": "D3 - Assign Complaint Type to Support Agent",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/support-agents/a1cf991e-3527-4d48-b07a-d68eacb72590/complaint-types/21014a1c-b895-4c36-b832-0349671ed317",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "support-agents",
+                "a1cf991e-3527-4d48-b07a-d68eacb72590",
+                "complaint-types",
+                "21014a1c-b895-4c36-b832-0349671ed317"
+              ]
+            },
+            "description": "StartFragment\n\n**D3 – Assign Complaint Type to Support Agent**\n\nEndpoint: PUT `/api/support-agents/{supportAgentId}/complaint-types/{complaintTypeId}`\n\nThis endpoint assigns a complaint type to a support agent.\n\n**Business rule:**\n\n- A complaint type that is already assigned to the support agent cannot be added again.\n    \n- A new complaint type can be assigned successfully.\n    \n\n**Test results:**\n\n- Existing complaint type (Account): duplicate assignment rejected.\n    \n- New complaint type (Card): successfully assigned.\n    \n- Verified using GET `/api/support-agents/{supportAgentId}`.\n    \n\nEndFragment"
+          },
+          "response": []
+        },
+        {
+          "name": "D4 - Assign Service Desk to Support Agent",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/support-agents/a1cf991e-3527-4d48-b07a-d68eacb72590/service-desk?deskNumber=4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "support-agents",
+                "a1cf991e-3527-4d48-b07a-d68eacb72590",
+                "service-desk"
+              ],
+              "query": [
+                {
+                  "key": "deskNumber",
+                  "value": "4"
+                }
+              ]
+            },
+            "description": "StartFragment\n\n**D4 – Assign Service Desk to Support Agent**\n\nEndpoint: PATCH `/api/support-agents/{supportAgentId}/service-desk?deskNumber={deskNumber}`\n\nThis endpoint changes the service desk assigned to a support agent using the support agent ID and the service desk number.\n\n**Test result:**\n\n- Successfully changed Jean Mugabo's service desk from Service Desk 1 to Service Desk 4.\n    \n- Verified using GET `/api/support-agents/{supportAgentId}`.\n    \n\nEndFragment"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "E - Resolution Actions",
+      "item": [
+        {
+          "name": "E1 - Save Resolution Action",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"actionTaken\": \"Transaction reversed\",\r\n    \"explanation\": \"Duplicate MoMo transfer refunded to the account\",\r\n    \"refundAmount\": 20000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/resolutionactions/save?complaintId=57acd86b-02a0-4381-8c7b-d6a87f0f3c06",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "resolutionactions",
+                "save"
+              ],
+              "query": [
+                {
+                  "key": "complaintId",
+                  "value": "57acd86b-02a0-4381-8c7b-d6a87f0f3c06"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E2 - Get Resolution Actions by Customer",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/resolutionactions/customer/BK100003",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "resolutionactions",
+                "customer",
+                "BK100003"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "E3 - Delete Resolution Action",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/resolutionactions/delete/317d3fac-5144-4991-93f5-59a010764023",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "resolutionactions",
+                "delete",
+                "317d3fac-5144-4991-93f5-59a010764023"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "F - Reports and Bulk Updates",
+      "item": [
+        {
+          "name": "F1 - Complaints per Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/complaints/stats/bystatus",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complaints",
+                "stats",
+                "bystatus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "F2 - Cancel Complaints for Absent Agent",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/complaints/cancelday?supportAgentId=a1cf991e-3527-4d48-b07a-d68eacb72590&date=2026-11-01",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complaints",
+                "cancelday"
+              ],
+              "query": [
+                {
+                  "key": "supportAgentId",
+                  "value": "a1cf991e-3527-4d48-b07a-d68eacb72590"
+                },
+                {
+                  "key": "date",
+                  "value": "2026-11-01"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bonus - Complaints Pagination",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/complaints/page?page=2&size=5&sort=complaintDate,desc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "complaints",
+                "page"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                },
+                {
+                  "key": "size",
+                  "value": "5"
+                },
+                {
+                  "key": "sort",
+                  "value": "complaintDate,desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bonus 1 - Dashboard Summary",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/dashboard/summary",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "dashboard",
+                "summary"
+              ]
+            },
+            "description": "StartFragment\n\n**Bonus 1 – Dashboard Summary**\n\n**Method:** GET\n\n**Endpoint:** `/api/dashboard/summary`\n\n**Description:** Retrieves a summary of the Bank of Kigali Customer Complaint Management System, including the total number of customers, support agents, free service desks, complaints received today, complaints with RECEIVED status, and resolution actions.\n\n**Expected response:** HTTP 200 OK with six dashboard summary values.\n\n**Test result:** Successfully tested in Postman.\n\nEndFragment"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
