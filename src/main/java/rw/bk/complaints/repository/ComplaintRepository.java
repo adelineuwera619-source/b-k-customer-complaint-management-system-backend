@@ -32,6 +32,7 @@ public interface ComplaintRepository extends JpaRepository<Complaint, UUID> {
 
     // Bonus dashboard: Count complaints by status.
     long countByStatus(ComplaintStatus status);
+    long countByComplaintDate(LocalDate complaintDate);
 
     // Count complaints assigned to an agent on a specific date.
     long countBySupportAgent_IdAndComplaintDate(
