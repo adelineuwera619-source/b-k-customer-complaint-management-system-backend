@@ -19,7 +19,7 @@ import rw.bk.complaints.domain.ResolutionAction;
 import rw.bk.complaints.service.ResolutionActionService;
 
 @RestController
-@RequestMapping("/api/resolution-actions")
+@RequestMapping("/api/resolutionactions")
 public class ResolutionActionController {
 
     private final ResolutionActionService resolutionActionService;
